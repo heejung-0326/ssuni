@@ -124,38 +124,38 @@ label[for=toggle], i.fa-search{
   }
   .suv a:hover{text-decoration: underline;}
 
-  /* news, notice 기사 목록 */
-  .notice h3 , .news h3 {
+  /* notice, news 기사목록 */
+  .notice h3, .news h3{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.6rem;
+    font-size:1.4rem;
     text-transform: uppercase;
-    border-bottom: 1px solid #333;
-    line-height: 40px;
-    padding: 6px 1.2% 0 1.2%;
-    margin-bottom: 10px;
-    font-weight: bold;
+    border-bottom:1px solid #333333;
+    line-height:40px;
+    padding:6px 1.2% 0 1.2%;
+    margin-bottom:10px;
+    font-weight:bold;
   }
-
   .notice .fa-plus, .news .fa-plus{
-    float: right;
-    border: 1px solid #333;
-    padding: 3px 5px;
-    font-size: 0.8rem;
+    float:right;
+    border:1px solid #333333;
+    padding:3px 5px;
+    font-size:0.9rem;
     transform: translateY(7px);
     cursor: pointer;
   }
 
-  .notice a:hover, .news a:hover{
-    text-decoration: underline;
-
+  .notice ul, .news ul{}
+  .notice li, .news li{
+    line-height:30px;
+    text-indent:10px;
+    overflow:hidden; /* 영역을 벗어나면 숨기기 */
+    text-overflow: ellipsis; /* ...생략기호 나오게하기 */
+    white-space: nowrap; /* 다음줄로 넘기지 않기 */
   }
 
-  .notice li, .news li{
-    line-height: 30px;
-    text-indent: 10px;
-    overflow: hidden; /*영역을 벗어나면 숨기기*/
-    text-overflow: ellipsis; /*...생략기호 나오게하기*/
-    white-space: nowrap; /*다음줄로 넘기지않기*/
+  .main{
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
 
@@ -164,7 +164,8 @@ label[for=toggle], i.fa-search{
     width:100%;
     padding:10px 0px;
     background:rgb(241, 241, 241);
-    border-top:1px solid #a0a0a0;
+    border-top:1px solid #dadada;
+    overflow: hidden;
   }
   .f_lnb, address, .sns{
     width:1200px;
